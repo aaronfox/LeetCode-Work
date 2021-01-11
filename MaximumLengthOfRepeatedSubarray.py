@@ -4,7 +4,9 @@ class Solution:
         # If A[i] == B[j]: dp[i][j] = dp[i+1][j+1] + 1
         # Invariant: answer for dp where i and j are larger is always calculated correctly  
         # Dynamic programming approach
-        
+        # O(n*m) runtime where n and m are the lengths of the arrays 
+        # O(n*m) space complexity to store numbers in dp       
+
         # Can find max solution while passing through dp
         max = 0
         # Create empty table
