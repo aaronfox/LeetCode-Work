@@ -1,2 +1,2 @@
 # LeetCode-Work
-A small repo containing some of my random LeetCode solutions
+A small repo containing some of my randomly selected LeetCode solutions (profile found at https://leetcode.com/aaronfox/)
