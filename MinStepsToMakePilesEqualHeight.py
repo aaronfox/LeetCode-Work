@@ -9,14 +9,14 @@ def minSteps(array):
     # Just need to keep track of number of unique numbers that occur before 
     # each number. When a unique number occurs, increment uniqueNums
     # Can simply add numSteps to number of total uniqueNums at every iteration
-    # Since that means the total number of unique numbers will have to change
-    # to that value
+    # Because each number has to go X number of level steps down to reach
+    # the min number
     numSteps = 0
-    uniqueNums = 0
+    numUniqueLevelsAwayFromMin = 0
     for i in range(1, len(array)):
         if array[i] != array[i - 1]:
-            uniqueNums += 1
-        numSteps += uniqueNums
+            numUniqueLevelsAwayFromMin += 1
+        numSteps += numUniqueLevelsAwayFromMin
 
     return numSteps
 
