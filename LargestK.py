@@ -8,7 +8,7 @@ def largestKTwoPointers(array):
         return 0
 
     # Two pointers approach with sorted array
-    # O(n) time complexity
+    # O(nlog(n)) time complexity due to sorting
     # O(1) space complexity
     p1 = 0
     p2 = len(array) - 1
