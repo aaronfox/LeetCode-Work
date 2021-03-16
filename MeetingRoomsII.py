@@ -59,11 +59,6 @@ def getMeetingRooms2(times):
             heapq.heappushpop(min_heap, interval[1])
     return len(min_heap)
 
-
-
-
-
-
 intervals1 = [(0, 30), (5, 10), (15, 20)]
 print(getMeetingRooms2(intervals1))
 print(getMeetingRooms2(intervals1) == 2)
