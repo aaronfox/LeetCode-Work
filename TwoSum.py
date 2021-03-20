@@ -1,13 +1,13 @@
-# URL: https://leetcode.com/problems/two-sum/submissions/
+# URL: https://leetcode.com/problems/two-sum
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:   
         # Same as hash table implementation below except only use one pass
         # O(n) in runtime complexity and O(n) space complexity 
         dict = {}
         for i in range(len(nums)):
             if target - nums[i] in dict:
                 return [i, dict[target - nums[i]]]
-            dict[target - nums[i]] = i
+            dict[nums[i]] = i
         
         # Using dict storage for O(n) runtime but O(n) memory as well
         dict = {}
